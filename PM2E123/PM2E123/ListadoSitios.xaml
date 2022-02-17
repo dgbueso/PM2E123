@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E123.ListadoSitios">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Examen 1 Parcial PM2 Daniel Guardado Bueso" HorizontalOptions="Center" />
+            <Label Text="Listado de Sitios" FontSize="35" HorizontalOptions="Center"/>
+            <ListView x:Name="listaCasaPoin"  HasUnevenRows="True" SeparatorVisibility="None" ItemSelected="lista_ItemSelected" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell  >
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions >
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+
+                                <Label Text="{Binding codigo}" Grid.Row="0" Grid.Column="0"   />
+                                <Label Text="{Binding latitud}" Grid.Row="0" Grid.Column="1" />
+                                <Label Text="{Binding longitud}" Grid.Row="0" Grid.Column="2" />
+                                <Label Text="{Binding direccion}" Grid.Row="0" Grid.Column="3" />
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

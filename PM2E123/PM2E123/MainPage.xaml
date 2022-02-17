@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E123.MainPage">
+
+    <StackLayout>
+        <Label Text="Examen 1 Parcial PM2 Daniel Guardado Bueso" HorizontalOptions="Center" />
+        <Image Source="https://www.linkpicture.com/q/logoGC.jpg" HorizontalOptions="Center" />
+        <Button Text="Ir a Guardar Sitios" x:Name="guardarsitios" Clicked="Guardarsitios_Clicked" />
+        <Button Text="Listado de Sitios" x:Name="btnList" Clicked="btnList_Clicked" />
+    </StackLayout>
+
+</ContentPage>

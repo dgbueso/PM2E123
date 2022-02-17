@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E123.GuardarSitios">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Examen 1 Parcial PM2 Daniel Guardado Bueso" HorizontalOptions="Center" />
+                <Label Text="Guardado de Sitios" FontSize="35" HorizontalOptions="Center"/>
+
+
+                <Label FontSize="20" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Latitud: "/>
+                                <Span x:Name="lbllatitud"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label FontSize="20" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Longitud: "/>
+                                <Span x:Name="lbllongitud" />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Entry Placeholder="Ingresa la Direccion del Sitio" x:Name="direccion" MaxLength="80" />
+                <Label Text="Imagen" />
+
+                <Image Source="https://www.uth.hn/wp-content/uploads/2019/12/logo-1.png" x:Name="imagen" HorizontalOptions="Center" HeightRequest="70" WidthRequest="60" />
+
+                <Button Text="Tomar Foto" x:Name="btncargarimg" Clicked="btncargarimg_Clicked" />
+                <Label Text="" />
+                <Button Text="Guardar Sitio" x:Name="btnRegis" Clicked="btnRegis_Clicked" />
+                <Button Text="Listado de Sitios" x:Name="btnList" Clicked="btnList_Clicked" />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+
+</ContentPage>

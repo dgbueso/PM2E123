@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E123.BorrarOActualizar">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Examen 1 Parcial PM2 Daniel Guardado Bueso" HorizontalOptions="Center" />
+                <Label Text="Edición de Sitios" FontSize="35" HorizontalOptions="Center"/>
+                
+
+                <Label FontSize="13" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="ID: "/>
+                                <Span x:Name="lblID"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label FontSize="20" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Latitud: "/>
+                                <Span x:Name="lbllatitud"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label FontSize="20" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Longitud: "/>
+                                <Span x:Name="lbllongitud" />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                
+                <Entry Placeholder="Ingrese la Direccion del Sitio" x:Name="direccion" MaxLength="80" />
+                <Label Text="Imagen" />
+
+                <Image Source="https://www.uth.hn/wp-content/uploads/2019/12/logo-1.png" x:Name="imagen" HorizontalOptions="Center" HeightRequest="70" WidthRequest="60" />
+
+                <Button Text="Tomar Foto" x:Name="btncargarimg" Clicked="btncargarimg_Clicked" />
+                <Label Text="" />
+                <Button Text="Borrar" x:Name="btnEliminar" Clicked="btnEliminar_Clicked" Grid.Column="0" />
+                <Button Text="Actualizar" x:Name="btnModif" Clicked="btnModif_Clicked" Grid.Column="1"/>
+                <Button Text="Ver GPS" x:Name="btnMapa" Clicked="btnMapa_Clicked" Grid.Column="2" />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
